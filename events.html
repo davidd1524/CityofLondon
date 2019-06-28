@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+	<link rel="stylesheet" href="css/layout.css" media="screen"/>
+</head>
+
+<body>
+
+<img src="images/citylogo.png" width="200" height="200" alt="citylogo"/>
+<header>
+	<h1>City of London Events</h1>
+</header>
+
+<div id="wrap">
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<ul id="menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+	</ul>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<h1>July Events Calendar</h1>
+
+<div class="egrid">
+  <div class="box box1"><b>Weekend</b></div>
+  <div class="box box2"><b>Event</b></div>
+  <div class="box">July 6 - 7</div>
+  <div class="box">Ribfest</div>
+  <div class="box">July 13 - 14</div>
+  <div class="box">Sunfest</div>
+  <div class="box">July 20 - 21</div>
+  <div class="box">Backstreet Boys Concert</div>
+  <div class="box">July 27 - 28</div>
+  <div class="box">Beer and BBQ fest</div>
+</div>
+
+<form>
+			<p>To request more info for these events, fill out your information below, press submit, and we will be in contact with you </p>
+			<p class="style information">
+			<label><b>Name</b>
+			<input type="text" name="customer_name" required>
+			</label> 
+			</p>
+
+			<p class="style red">
+			<label><b>Phone</b>
+			<input type="tel" name="phone_number">
+			</label>
+			</p>
+
+			<p class="style">
+			<label><b>Email</b>
+			<input type="email" name="email_address" required>
+			</label>
+			</p>
+						
+			<p><button>Submit</button></p>
+			
+</form>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</div>
+
+<footer>
+<ul>
+<li><a href="index.html">home</a></li>
+<li><a href="https://www.london.ca/pages/partners.aspx">community links</a></li>
+<li><a href="https://www.london.ca/pages/contactus.aspx">contact us</a></li>
+<li><a href="https://www.london.ca/pages/sitemap.aspx">site map</a></li>
+</ul>
+</footer>
+   
+</body>
+</html> 

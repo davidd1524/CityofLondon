@@ -1,0 +1,334 @@
+body {
+	font: 14px/1.4 Georgia, sans-serif;
+	margin: 0;
+}
+
+header {
+	font: 32px/2 Impact, sans-serif;
+	color: white;
+	background-color: #40604c;
+	text-shadow: 3px 3px #666;
+	text-align: left;
+	padding-top: 4%;
+}
+
+#wrap {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+}
+
+#wrap h1 {
+	font: 40px/2 Impact, sans-serif;
+	color: #666;
+	padding-left: 1%;
+}
+
+h2 {
+	font: 32px/1.2 Impact, sans-serif;
+	color: #666;
+}
+
+
+
+footer {
+	text-align: center;
+	background-color: #40604c;
+	padding-bottom: 1%;
+}
+
+footer li {
+	display: inline;
+	padding: 3.2%;
+}
+
+footer a {
+	font: 30px/6 Impact, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+section {
+	float: left;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+section img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+aside {
+	float: right;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+aside img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+
+.sidenav {
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 22px 12px 12px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e8e3e3;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* child selector for line items in sidenav, only li inside nav will have color changed*/
+.sidenav li:hover > a {
+    color: #666;
+}
+
+/* events page grid with auto placement */
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 120%;
+}
+
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.egrid {
+    width: 600px;
+    display: grid;
+	grid-gap: 10px;
+    grid-template-columns: repeat(2, 300px);
+	
+}
+
+
+/* descendant selector */
+div.egrid b {
+	color:yellow;
+}
+
+	
+/* end of events page grid */
+
+/* events page form start with multiple class selectors*/
+.style {
+	    padding: 5px;
+	    margin: 5px;
+	    border-width: 2px;
+	    border-style: solid;
+		width:300px;
+}
+
+.red {
+	    color: Red;
+	    border-color: Maroon;
+}
+
+.information {
+	    color: Blue;
+	    border-color: Navy;
+}
+	
+/* events page form end */
+
+/* about us page grid with line-based placement start */
+.agrid {
+        display: grid;
+		grid-gap: 10px;
+        grid-template-columns: [col1-start] 200px  [col2-start] 200px  [col3-start] 200px [col3-end];
+        grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+        background-color: #fff;
+        color: #444;
+}
+
+.box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+
+}
+
+
+.a {
+        grid-column: col1-start / col3-start;
+        grid-row: row1-start ;
+}
+
+.b {
+        grid-column: col3-start ;
+        grid-row: row1-start;
+}
+ 
+.c {
+        grid-column: col1-start / col3-start;
+        grid-row: row2-start ;
+}
+
+.d {
+        grid-column: col3-start ;
+        grid-row: row2-start ;
+    }
+
+
+/* about us page grid end */
+
+
+@media screen and (max-height: 450px) { 
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+header {
+	background-color: #40604c;
+	font: 22px/2 Impact, sans-serif;
+	padding-top: 2%;
+}
+	
+#wrap {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+	padding-right: 3%;
+}
+
+#wrap h1 {
+	font: 35px/2 Impact, sans-serif;
+	color: #666;
+	padding-left: 1%;
+}
+
+
+section {
+	float: none;
+	width: 98%;
+	margin-bottom: 1%;  
+}
+
+section img {
+	padding-bottom: 1px;
+}
+	
+aside {
+	float: none;
+	width: 98%;
+}
+
+aside img {
+	padding-bottom: 1px;
+}
+
+footer {
+	background-color: #40604c;
+}
+
+footer li {
+	padding: 1.5%;
+}
+
+footer a {
+	font: 15px/6 Impact, sans-serif;
+}
+
+
+@media screen and (max-width: 480px) {
+header {
+	background-color: #40604c;
+	font: 16px/2 Impact, sans-serif;
+	padding-top: 2%;
+}
+
+#wrap {
+	width: 98%;
+	margin: 0 auto;
+}
+
+#wrap h1 {
+	font: 30px/2 Impact, sans-serif;
+	color: #666;
+	padding-left: 1%;
+}
+
+h2 {
+	font: 22px/1.2 Impact, sans-serif;
+	color: #666;
+}
+
+section {
+	float: none;
+	width: 98%;
+	margin-bottom: 1%;
+	border: none;
+}
+
+section img {
+	display: none;
+}
+
+aside {
+	float: none;
+	width: 98%;
+	border: none;
+}
+
+aside img {
+	display: none;
+}
+
+footer {
+	background-color: #40604c;
+}	
+
+footer li {
+	display: block;
+	border-bottom: 1px solid;
+	border-color: white;
+	margin-left: -40px;
+}
+
+footer a {
+	font: 15px/5 Impact, sans-serif;
+	}
+
+p {
+		color:#40604c;
+}
+
